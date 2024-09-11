@@ -1,0 +1,99 @@
+@use 'variables';
+
+
+.contador {
+    display: block;
+    padding-top: 30px;
+    color: variables.$textColor;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: variables.$pink;
+}
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../imagens/festa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20%;
+    position: relative;
+    
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: "";
+        opacity: 0.7;
+    }
+
+    &__text{
+        margin: 64px auto;
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__text {
+            font-size: 40px;
+            line-height: 38px;
+            margin: 24px 0;
+        }
+    }
+}
+
+.infos-bar{
+    padding: 16px 100px;
+    background-image: linear-gradient( rgb(252, 239, 255), rgba(252, 239, 255, 0.76));
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 20px;
+            color: variables.$secundaryTextColor;
+
+            b {
+                font-size: 24px;
+                display: block;
+                color: variables.$secundaryTextColor;
+            }
+        }
+    }
+
+    @media (max-width: 640px){
+        padding: 16px 24px;
+        display: block;
+
+        &__infos{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        &__infos{
+            gap: 16px;
+        }
+    }
+}
