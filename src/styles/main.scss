@@ -31,9 +31,17 @@
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+
+    @media (max-width: 640px){
+        max-width: 500px;
+    }
 }
 
 .titulo2{
     color: variables.$purple;
     font-size: 85px;
+
+    @media (max-width: 640px){
+        font-size: 50px;
+    }
 }

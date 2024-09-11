@@ -48,6 +48,12 @@
         &__detail {
             margin-right: 0;
             margin-bottom: 16px;
+
+            &__description {
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
+
     }
 }
