@@ -1,5 +1,8 @@
 @use 'hero';
 @use 'variables';
+@use 'party';
+@use 'shows';
+
 
 * {
     margin: 0;
@@ -22,4 +25,15 @@
     @media (max-width:1024px){
         max-width: 90%;
     }
+}
+
+.textContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.titulo2{
+    color: variables.$purple;
+    font-size: 85px;
 }

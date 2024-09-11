@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
@@ -30,7 +31,58 @@
             </ul>
         </div>
     </div>
+    </header>
 
+    <section class="party party--bebida">
+        <div class="container" data-aos="fade-down">
+            <div class="party__detail ">
+                <h2 class="party__detail__title">Bebidas liberadas</h2>
+                <p class="party__detail__description">
+                    Caso você goste de beber, a bebida alcoólica e não alcoólica será liberada e de graça enquanto durar.
+                </p>
+            </div>
+            <img class="party__image" src="./imagens/bebidas.png" alt="bebidas">
+        </div>
+    </section>
+    <section class="party party--churrasco">
+        <div class="container" data-aos="fade-down">
+            <div class="party__detail ">
+                <h2 class="party__detail__title">Comidas liberadas</h2>
+                <p class="party__detail__description">
+                    Durante o evento, haverá uma variedade de comidas deliciosas disponíveis para todos aproveitarem. Venha com fome e desfrute das iguarias preparadas especialmente para você!
+                </p>
+            </div>
+            <img class="party__image" src="./imagens/churrasco.jpg" alt="churrasco">
+        </div>
+    </section>
+
+    <section class="shows shows--ramemes shows__image-left">
+        <div class="textContainer">
+            <h2 class="titulo2">ATRAÇÔES</h2>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <div class="shows__detail">
+                <h2 class="shows__detail__title">DJ RAMEMES</h2>
+                <p class="shows__detail__description">
+                    Prepare-se para uma noite inesquecível! Temos o prazer de anunciar que o renomado DJ Ramemes fará uma participação especial na nossa festa, abrindo o evento com um set exclusivo. Conhecido por suas batidas contagiantes e mixagens impecáveis, DJ Ramemes promete agitar a pista de dança e garantir que todos entrem no clima desde o primeiro minuto. Não perca essa oportunidade de curtir uma noite incrível ao som de um dos melhores DJs da cena. Venha e traga seus amigos para celebrar com a gente!
+                </p>
+            </div>
+            <img class="shows__image" src="./imagens/ramemes.jfif" alt="dj ramemes">
+        </div>
+    </section>
+    <section class="shows shows--matue shows__image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="shows__detail">
+                <h2 class="shows__detail__title">MATUE</h2>
+                <p class="shows__detail__description">
+                    Prepare-se para um encerramento épico! Temos o prazer de anunciar que o talentoso Matuê será o responsável por fechar a nossa festa com chave de ouro. Conhecido por suas letras marcantes e performances energéticas, Matuê promete levar a galera ao delírio com seus maiores sucessos. Não perca essa oportunidade única de curtir uma noite inesquecível ao som de um dos maiores nomes da música atual.
+                </p>
+            </div>
+            <img class="shows__image" src="./imagens/matue.png" alt="matue">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
