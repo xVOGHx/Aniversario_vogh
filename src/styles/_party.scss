@@ -11,13 +11,26 @@
     .container{    
     display: flex;
     gap: 40px;
+
+    @media(max-width: 640px){
+        display: block;
+        }
     }
 
     &__image{
         max-width: 360px;
+
+        @media(max-width: 640px){
+            width: 100%;
+        }
     }
 
     &__detail {
+
+        @media(max-width: 640px){
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
         &__title {
             font-size: 40px;
             font-weight: bold;
@@ -27,23 +40,8 @@
         &__description {
             font-size: 20px;
             line-height: 22px;
-        }
-    }
 
-    @media(max-width: 640px){
-        .container{
-            display: block;
-        }
-
-        &__image {
-            width: 100%;
-        }
-
-        &__detail {
-            margin-right: 0;
-            margin-bottom: 16px;
-
-            &__description {
+            @media(max-width: 640px){
                 font-size: 16px;
                 line-height: 22px;
             }

@@ -7,6 +7,7 @@
     color: variables.$textColor;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: variables.$pink;
+    max-width: 100%;
 }
 
 .hero{
@@ -16,6 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 20%;
+    background-position-x: center;
     position: relative;
     
     .container {
